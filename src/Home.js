@@ -25,7 +25,7 @@ function Home() {
                     gutterBottom
                 >Our Games</Typography>
                 <Typography variant="h5" align="center" color="text.secondary" paragraph>
-                    At Kiyummi Games, we strive to create the best player experience. Check out our awesome selection!
+                    At Kiyummi Games, we strive to create video games with the best player experience. Check out our awesome selection!
                 </Typography>
             </Container>
             <Container sx={{ py: 6 }} maxWidth="lg">

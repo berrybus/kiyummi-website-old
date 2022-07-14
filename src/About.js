@@ -18,6 +18,15 @@ function About() {
                 <Typography variant="h6" align="center" color="text.secondary" paragraph gutterBottom >
                     If you enjoy our works, please consider donating to support us!
                 </Typography>
+
+                <Typography component="h1"
+                    variant="h3"
+                    align="center"
+                    gutterBottom
+                >Join Us</Typography>
+                <Typography variant="h6" align="center" color="text.secondary" paragraph gutterBottom >
+                    Are you excited about working in a fast-paced, cross-functional team? If so, contact us on Twitter for any business inquiries or to join our amazing game studio!
+                </Typography>
             </Container>
 
         </main>
