@@ -7,6 +7,7 @@ import Stack from '@mui/material/Stack';
 import Divider from '@mui/material/Divider';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LocalCafeIcon from '@mui/icons-material/LocalCafe';
+import { FaDiscord } from 'react-icons/fa';
 
 function Copyright() {
     return (
@@ -32,6 +33,10 @@ function Footer() {
 
                     <Button variant="outlined" href="https://ko-fi.com/kiyummi" target="_blank" rel="noopener noreferrer" startIcon={<LocalCafeIcon />}>
                         Ko-fi
+                    </Button>
+
+                    <Button variant="outlined" href="https://discord.gg/ke4E8Wgzpw" target="_blank" rel="noopener noreferrer" startIcon={<FaDiscord />}>
+                        Discord
                     </Button>
                 </Stack>
                 <Copyright />
