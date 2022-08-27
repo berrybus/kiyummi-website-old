@@ -154,10 +154,12 @@ function Home() {
                             align="center"
                             gutterBottom
                         >Newsfeed</Typography>
+                        <Box sx ={{ height: 800, overflow: "scroll"}}>
                         <Timeline
                             dataSource={{ sourceType: "profile", screenName: "dev_witch" }}
                             options={{ width: "100%", height: "800" }}
                         />
+                        </Box>
                     </Grid>
                 </Grid>
             </Container>
