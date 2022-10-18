@@ -1,6 +1,7 @@
 import * as React from 'react';
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
+import Chip from '@mui/material/Chip';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Card from '@mui/material/Card';
@@ -13,7 +14,8 @@ import { Timeline } from 'react-twitter-widgets'
 import gunwitch_banner from './gunwitch.png';
 import mabel_banner from './mabel.png';
 import rose_banner from './rose.png';
-import preview from './fairyside_preview.png';
+import fairyside from './fairyside.png';
+import fairyside_poster from './fairyside_poster.png';
 
 function Home() {
     return (
@@ -27,6 +29,37 @@ function Home() {
                 <Typography variant="h5" align="center" color="text.secondary" paragraph>
                     At Kiyummi Games, we strive to create video games with the best player experience. Check out our awesome selection!
                 </Typography>
+            </Container>
+            <Container sx={{ py: 6 }} maxWidth="lg">
+                <Grid container spacing={4} alignItems="center" justifyContent="center">
+                    <Grid item xs={12} sm={8} md={8}>
+                        <Card
+                            sx={{ height: "100%", display: 'flex', flexDirection: 'column' }}
+                        >
+                            <CardActionArea href="https://store.steampowered.com/app/2174600/Fairyside/?beta=0" target="_blank" rel="noopener noreferrer">
+                                <CardMedia
+                                    component="img"
+                                    image={fairyside}
+                                    alt="Fairyside banner"
+                                />
+                            </CardActionArea>
+                            <CardContent sx={{ flexGrow: 1 }}>
+                                <Typography gutterBottom variant="h5" component="h2">
+                                    <Chip label="Coming soon!" sx={{ mr: 1, mb: 0.5}} />  Fairyside
+                                </Typography>
+                                <Typography>
+                                A dark fantasy rogue-like shoot-em-up with bullet hell and RPG elements featuring cute pixel art, visual novel interludes, and story-driven gameplay. Join Shirley in her journey to learn magic and survive Redwood Academy!
+                                </Typography>
+                            </CardContent>
+                            <CardActions>
+                                <Button size="small"
+                                    href="https://store.steampowered.com/app/2174600/Fairyside/?beta=0" target="_blank" rel="noopener noreferrer"
+                                >Steam
+                                </Button>
+                            </CardActions>
+                        </Card>
+                    </Grid>
+                </Grid>
             </Container>
             <Container sx={{ py: 6 }} maxWidth="lg">
                 <Grid container spacing={4}>
@@ -63,6 +96,7 @@ function Home() {
                             </CardActions>
                         </Card>
                     </Grid>
+
                     <Grid item xs={12} sm={6} md={4}>
                         <Card
                             sx={{ height: "100%", display: 'flex', flexDirection: 'column' }}
@@ -125,30 +159,24 @@ function Home() {
             </Container>
             <Container maxWidth="xl" >
                 <Grid container spacing={12}>
-                    <Grid item xs={12} md={7}>
+                    <Grid item xs={12} md={6}>
                         <Typography component="h1"
                             variant="h3"
                             align="center"
                             gutterBottom
                         >Upcoming Releases</Typography>
                         <Typography variant="h6" align="center" color="text.secondary" paragraph gutterBottom>
-                            We are currently developing Gun Witch 2: Fairyside! It will be a prequel to Gun Witch with a focus on horror and rogue-like elements! Follow <a href="https://twitter.com/dev_witch" target="_blank" rel="noopener noreferrer">@dev_witch</a> on Twitter for development updates.
+                            Fairyside is set to release soon! It will be a prequel to Gun Witch with a focus on horror and rogue-like elements! We are also actively working on a Fairyside art book!
                         </Typography>
 
-
                         <Box component="img"
-              sx={{ width: "100%", my: 1}}
-              src={preview}
-              alt="Fairyside preview screenshot">
-            </Box>
+                            sx={{ width: "100%", my: 1 }}
+                            src={fairyside_poster}
+                            alt="Fairyside promotional poster">
+                        </Box>
 
-            <Typography component="h2"
-                            variant="h5"
-                            align="center"
-                            gutterBottom
-                        >Sneak Peak!</Typography>
                     </Grid>
-                    <Grid item xs={12} md={5}>
+                    <Grid item xs={12} md={6}>
                         <Typography component="h1"
                             variant="h3"
                             align="center"
