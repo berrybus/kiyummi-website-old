@@ -52,7 +52,7 @@ function Home() {
                             </CardContent>
                             <CardActions>
                                 <Button size="small"
-                                    href="https://store.steampowered.com/app/2174600/Fairyside/?beta=0" target="_blank" rel="noopener noreferrer"
+                                    href="https://store.steampowered.com/app/2174600/Fairyside/" target="_blank" rel="noopener noreferrer"
                                 >Steam
                                 </Button>
                                 <Button size="small"
