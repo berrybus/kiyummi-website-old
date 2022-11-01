@@ -36,7 +36,7 @@ function Home() {
                         <Card
                             sx={{ height: "100%", display: 'flex', flexDirection: 'column' }}
                         >
-                            <CardActionArea href="https://store.steampowered.com/app/2174600/Fairyside/?beta=0" target="_blank" rel="noopener noreferrer">
+                            <CardActionArea href="https://store.steampowered.com/app/2174600/Fairyside/" target="_blank" rel="noopener noreferrer">
                                 <CardMedia
                                     component="img"
                                     image={fairyside}
@@ -45,7 +45,7 @@ function Home() {
                             </CardActionArea>
                             <CardContent sx={{ flexGrow: 1 }}>
                                 <Typography gutterBottom variant="h5" component="h2">
-                                    <Chip label="Coming soon!" sx={{ mr: 1, mb: 0.5}} />  Fairyside
+                                    Fairyside
                                 </Typography>
                                 <Typography>
                                 A dark fantasy rogue-like shoot-em-up with bullet hell and RPG elements featuring cute pixel art, visual novel interludes, and story-driven gameplay. Join Shirley in her journey to learn magic and survive Redwood Academy!
@@ -55,6 +55,10 @@ function Home() {
                                 <Button size="small"
                                     href="https://store.steampowered.com/app/2174600/Fairyside/?beta=0" target="_blank" rel="noopener noreferrer"
                                 >Steam
+                                </Button>
+                                <Button size="small"
+                                    href="https://kiyummi.itch.io/fairyside" target="_blank" rel="noopener noreferrer"
+                                >Itch.io
                                 </Button>
                             </CardActions>
                         </Card>
