@@ -174,10 +174,10 @@ function Home() {
                         </Typography>
 
                         <Typography variant="h6" align="center" color="text.secondary" paragraph gutterBottom>
-                            Get it <a href={artbook} target="_blank">here</a>!
+                            Get it <a href={artbook} target="_blank" rel="noopener noreferrer">here</a>!
                         </Typography>
 
-                        <a href={artbook} target="_blank">
+                        <a href={artbook} target="_blank" rel="noopener noreferrer">
                             <Box component="img"
                                 sx={{ width: "100%", my: 1 }}
                                 src={artbook_cover}
