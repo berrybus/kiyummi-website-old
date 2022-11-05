@@ -14,7 +14,8 @@ import gunwitch_banner from './gunwitch.png';
 import mabel_banner from './mabel.png';
 import rose_banner from './rose.png';
 import fairyside from './fairyside.png';
-import fairyside_poster from './fairyside_poster.png';
+import artbook_cover from './artbook_cover.png';
+import artbook from './artbook.pdf';
 
 function Home() {
     return (
@@ -47,7 +48,7 @@ function Home() {
                                     Fairyside
                                 </Typography>
                                 <Typography>
-                                A dark fantasy rogue-like shoot-em-up with bullet hell and RPG elements featuring cute pixel art, visual novel interludes, and story-driven gameplay. Join Shirley in her journey to learn magic and survive Redwood Academy!
+                                    A dark fantasy rogue-like shoot-em-up with bullet hell and RPG elements featuring cute pixel art, visual novel interludes, and story-driven gameplay. Join Shirley in her journey to learn magic and survive Redwood Academy!
                                 </Typography>
                             </CardContent>
                             <CardActions>
@@ -167,16 +168,22 @@ function Home() {
                             variant="h3"
                             align="center"
                             gutterBottom
-                        >Upcoming Releases</Typography>
+                        >The Fairyside Artbook</Typography>
                         <Typography variant="h6" align="center" color="text.secondary" paragraph gutterBottom>
-                            Fairyside is set to release soon! It will be a prequel to Gun Witch with a focus on horror and rogue-like elements! We are also actively working on a Fairyside art book!
+                            We've released an artbook for our newest game, Fairyside, featuring concept art, fanart, and sketches of all your favorite characters. We were originally planning to sell the artbook as DLC but decided to release it for free instead so that everyone can enjoy it!
                         </Typography>
 
-                        <Box component="img"
-                            sx={{ width: "100%", my: 1 }}
-                            src={fairyside_poster}
-                            alt="Fairyside promotional poster">
-                        </Box>
+                        <Typography variant="h6" align="center" color="text.secondary" paragraph gutterBottom>
+                            Get it <a href={artbook} target="_blank">here</a>!
+                        </Typography>
+
+                        <a href={artbook} target="_blank">
+                            <Box component="img"
+                                sx={{ width: "100%", my: 1 }}
+                                src={artbook_cover}
+                                alt="Fairyside artbook cover">
+                            </Box>
+                        </a>
 
                     </Grid>
                     <Grid item xs={12} md={6}>
@@ -185,9 +192,12 @@ function Home() {
                             align="center"
                             gutterBottom
                         >Newsfeed</Typography>
+                        <Typography variant="h6" align="center" color="text.secondary" paragraph gutterBottom>
+                            Kiyummi Games updates and developer blog. Follow  us for the latest news!
+                        </Typography>
                         <Timeline
                             dataSource={{ sourceType: "profile", screenName: "dev_witch" }}
-                            options={{ width: "100%", height: "800" }}
+                            options={{ width: "100%", height: "1200" }}
                         />
                     </Grid>
                 </Grid>

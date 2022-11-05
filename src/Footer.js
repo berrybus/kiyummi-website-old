@@ -8,6 +8,7 @@ import Divider from '@mui/material/Divider';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LocalCafeIcon from '@mui/icons-material/LocalCafe';
 import { FaDiscord } from 'react-icons/fa';
+import { AiOutlineMail } from 'react-icons/ai';
 
 function Copyright() {
     return (
@@ -37,6 +38,9 @@ function Footer() {
 
                     <Button variant="outlined" href="https://discord.gg/ke4E8Wgzpw" target="_blank" rel="noopener noreferrer" startIcon={<FaDiscord />}>
                         Discord
+                    </Button>
+                    <Button variant="outlined" href="mailto:kiyummigames@gmail.com" target="_blank" rel="noopener noreferrer" startIcon={<AiOutlineMail/>}>
+                        Email
                     </Button>
                 </Stack>
                 <Copyright />
