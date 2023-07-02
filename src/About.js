@@ -40,11 +40,8 @@ function About() {
         </Typography>
         <Typography variant="h6" align="center" paragraph gutterBottom>
           Are you excited about working in a fast-paced, cross-functional team?
-          If so, please{" "}
-          <a href="mailto:kiyummigames@gmail.com" target="_blank">
-            email us
-          </a>{" "}
-          for any business inquiries or to join our amazing game studio!
+          If so, please <a href="mailto:kiyummigames@gmail.com">email us</a> for
+          any business inquiries or to join our amazing game studio!
         </Typography>
       </Container>
     </main>

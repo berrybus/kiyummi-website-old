@@ -35,7 +35,6 @@ function Footer() {
           <Button
             variant="outlined"
             href="https://mastodon.gamedev.place/@kiyummi"
-            target="_blank"
             rel="me"
             startIcon={<FaMastodon />}
           >
