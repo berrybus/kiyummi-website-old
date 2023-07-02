@@ -1,6 +1,6 @@
 import * as React from "react";
 import Container from "@mui/material/Container";
-import Badge from "@mui/material/Badge";
+import Chip from "@mui/material/Chip";
 import Box from "@mui/material/Box";
 import Divider from "@mui/material/Divider";
 import Grid from "@mui/material/Grid";
@@ -11,6 +11,7 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import CardActionArea from "@mui/material/CardActionArea";
 import Button from "@mui/material/Button";
+import Stack from "@mui/material/Stack";
 import gunwitch_banner from "./gunwitch.png";
 import mabel_banner from "./mabel.png";
 import rose_banner from "./rose.png";
@@ -41,75 +42,63 @@ function Home() {
       <Container sx={{ py: 6 }} maxWidth="lg">
         <Grid container spacing={4} alignItems="center" justifyContent="center">
           <Grid item xs={12} sm={8} md={8}>
-            <Badge
+            <Card
               sx={{
-                "& .MuiBadge-badge": {
-                  color: "white",
-                  width: 100,
-                  height: 45,
-                },
+                height: "100%",
+                display: "flex",
+                flexDirection: "column",
               }}
-              color="secondary"
-              badgeContent={
-                <Typography variant="h5" fontWeight="bold" align="center">
-                  New!
-                </Typography>
-              }
             >
-              <Card
-                sx={{
-                  height: "100%",
-                  display: "flex",
-                  flexDirection: "column",
-                }}
+              <CardActionArea
+                href="https://store.steampowered.com/app/2174600/Fairyside/"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <CardActionArea
+                <CardMedia
+                  component="img"
+                  image={fairyside}
+                  alt="Fairyside banner"
+                />
+              </CardActionArea>
+              <CardContent sx={{ flexGrow: 1 }}>
+                <Stack
+                  direction="row"
+                  spacing={1}
+                  justifyContent="center"
+                  alignItems="center"
+                  sx={{ pb: 1 }}
+                >
+                  <Typography variant="h5" fontWeight="bold" component="h2">
+                    Fairyside
+                  </Typography>
+                  <Chip label="New!" color="primary" />
+                </Stack>
+                <Typography>
+                  A dark fantasy rogue-like shoot-em-up with bullet hell and RPG
+                  elements featuring cute pixel art, visual novel interludes,
+                  and story-driven gameplay. Join Shirley in her journey to
+                  learn magic and survive Redwood Academy!
+                </Typography>
+              </CardContent>
+              <CardActions>
+                <Button
+                  size="small"
                   href="https://store.steampowered.com/app/2174600/Fairyside/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <CardMedia
-                    component="img"
-                    image={fairyside}
-                    alt="Fairyside banner"
-                  />
-                </CardActionArea>
-                <CardContent sx={{ flexGrow: 1 }}>
-                  <Typography
-                    gutterBottom
-                    variant="h5"
-                    fontWeight="bold"
-                    component="h2"
-                  >
-                    Fairyside
-                  </Typography>
-                  <Typography>
-                    A dark fantasy rogue-like shoot-em-up with bullet hell and
-                    RPG elements featuring cute pixel art, visual novel
-                    interludes, and story-driven gameplay. Join Shirley in her
-                    journey to learn magic and survive Redwood Academy!
-                  </Typography>
-                </CardContent>
-                <CardActions>
-                  <Button
-                    size="small"
-                    href="https://store.steampowered.com/app/2174600/Fairyside/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Steam
-                  </Button>
-                  <Button
-                    size="small"
-                    href="https://kiyummi.itch.io/fairyside"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Itch.io
-                  </Button>
-                </CardActions>
-              </Card>
-            </Badge>
+                  Steam
+                </Button>
+                <Button
+                  size="small"
+                  href="https://kiyummi.itch.io/fairyside"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Itch.io
+                </Button>
+              </CardActions>
+            </Card>
           </Grid>
         </Grid>
       </Container>
@@ -275,39 +264,47 @@ function Home() {
       <Divider sx={{ pt: 6 }} />
       <Container maxWidth="lg">
         <Card sx={{ display: "flex", mt: 6 }}>
-          <a href={artbook} target="_blank" rel="noopener noreferrer">
-            <CardMedia
-              component="img"
-              sx={{ width: 500, p: 4 }}
-              image={artbook_cover}
-              alt="Artbook cover"
-            />
-          </a>
-          <Box sx={{ display: "flex", flexDirection: "column", m: 6 }}>
-            <Typography
-              component="h4"
-              fontWeight="bold"
-              variant="h4"
-              align="center"
-              gutterBottom
-            >
-              Fairyside Artbook
-            </Typography>
-            <Typography variant="h6" align="center" paragraph gutterBottom>
-              We've released an artbook for our newest game, Fairyside,
-              featuring concept art, fanart, and sketches of all your favorite
-              characters. We were originally planning to sell the artbook as DLC
-              but decided to release it for free instead so that everyone can
-              enjoy it!
-            </Typography>
-            <Typography variant="h6" align="center" paragraph gutterBottom>
-              Get it{" "}
-              <a href={artbook} target="_blank" rel="noopener noreferrer">
-                here
-              </a>
-              !
-            </Typography>
-          </Box>
+          <Grid container spacing={2}>
+            <Grid item sm={12} md={4}>
+              <Box sx={{ p: 4 }}>
+                <a href={artbook} target="_blank" rel="noopener noreferrer">
+                  <CardMedia
+                    component="img"
+                    sx={{ width: "100%" }}
+                    image={artbook_cover}
+                    alt="Artbook cover"
+                  />
+                </a>
+              </Box>
+            </Grid>
+            <Grid item sm={12} md={8}>
+              <Box sx={{ display: "flex", flexDirection: "column", m: 6 }}>
+                <Typography
+                  component="h4"
+                  fontWeight="bold"
+                  variant="h4"
+                  align="center"
+                  gutterBottom
+                >
+                  Fairyside Artbook
+                </Typography>
+                <Typography variant="h6" align="center" paragraph gutterBottom>
+                  We've released an artbook for our newest game, Fairyside,
+                  featuring concept art, fanart, and sketches of all your
+                  favorite characters. We were originally planning to sell the
+                  artbook as DLC but decided to release it for free instead so
+                  that everyone can enjoy it!
+                </Typography>
+                <Typography variant="h6" align="center" paragraph gutterBottom>
+                  Get it{" "}
+                  <a href={artbook} target="_blank" rel="noopener noreferrer">
+                    here
+                  </a>
+                  !
+                </Typography>
+              </Box>
+            </Grid>
+          </Grid>
         </Card>
       </Container>
 
