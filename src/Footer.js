@@ -38,7 +38,7 @@ function Footer() {
             href="https://mastodon.gamedev.place/@kiyummi"
             rel="me"
             startIcon={<FaMastodon />}
-            sx={{ display: { sm: "none", md: "flex" } }}
+            sx={{ display: { xs: "none", md: "flex" } }}
           >
             Mastodon
           </Button>
@@ -48,7 +48,7 @@ function Footer() {
             rel="me"
             aria-label="mastodon"
             size="large"
-            sx={{ display: { sm: "flex", md: "none" } }}
+            sx={{ display: { xs: "flex", md: "none" } }}
           >
             <FaMastodon fontSize="inherit" />
           </IconButton>
@@ -59,7 +59,7 @@ function Footer() {
             target="_blank"
             rel="noopener noreferrer"
             startIcon={<TwitterIcon />}
-            sx={{ display: { sm: "none", md: "flex" } }}
+            sx={{ display: { xs: "none", md: "flex" } }}
           >
             Twitter
           </Button>
@@ -69,7 +69,7 @@ function Footer() {
             target="_blank"
             aria-label="twitter"
             size="large"
-            sx={{ display: { sm: "flex", md: "none" } }}
+            sx={{ display: { xs: "flex", md: "none" } }}
           >
             <TwitterIcon fontSize="inherit" />
           </IconButton>
@@ -80,7 +80,7 @@ function Footer() {
             target="_blank"
             rel="noopener noreferrer"
             startIcon={<LocalCafeIcon />}
-            sx={{ display: { sm: "none", md: "flex" } }}
+            sx={{ display: { xs: "none", md: "flex" } }}
           >
             Ko-fi
           </Button>
@@ -90,7 +90,7 @@ function Footer() {
             target="_blank"
             aria-label="ko-fi"
             size="large"
-            sx={{ display: { sm: "flex", md: "none" } }}
+            sx={{ display: { xs: "flex", md: "none" } }}
           >
             <LocalCafeIcon fontSize="inherit" />
           </IconButton>
@@ -101,7 +101,7 @@ function Footer() {
             target="_blank"
             rel="noopener noreferrer"
             startIcon={<FaDiscord />}
-            sx={{ display: { sm: "none", md: "flex" } }}
+            sx={{ display: { xs: "none", md: "flex" } }}
           >
             Discord
           </Button>
@@ -111,7 +111,7 @@ function Footer() {
             target="_blank"
             aria-label="discord"
             size="large"
-            sx={{ display: { sm: "flex", md: "none" } }}
+            sx={{ display: { xs: "flex", md: "none" } }}
           >
             <FaDiscord fontSize="inherit" />
           </IconButton>
@@ -122,7 +122,7 @@ function Footer() {
             target="_blank"
             rel="noopener noreferrer"
             startIcon={<AiOutlineMail />}
-            sx={{ display: { sm: "none", md: "flex" } }}
+            sx={{ display: { xs: "none", md: "flex" } }}
           >
             Email
           </Button>
@@ -132,7 +132,7 @@ function Footer() {
             target="_blank"
             aria-label="email"
             size="large"
-            sx={{ display: { sm: "flex", md: "none" } }}
+            sx={{ display: { xs: "flex", md: "none" } }}
           >
             <AiOutlineMail fontSize="inherit" />
           </IconButton>
