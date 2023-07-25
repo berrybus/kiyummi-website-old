@@ -34,7 +34,7 @@ function Home() {
         </Typography>
         <Typography variant="h5" align="center" paragraph>
           Kiyummi Games is a small studio dedicated to creating video games with
-          fun gameplay loops and immersive stories
+          addictive gameplay and immersive stories
         </Typography>
       </Container>
       <Divider sx={{ pt: 6 }} />
