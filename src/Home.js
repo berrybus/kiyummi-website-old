@@ -18,6 +18,8 @@ import rose_banner from "./rose.png";
 import fairyside from "./fairyside.png";
 import artbook_cover from "./artbook_cover.png";
 import artbook from "./artbook.pdf";
+import desktop_wallpaper from "./gun_witch_wallpaper.jpg";
+import phone_wallpaper from "./gun_witch_phone_wallpaper.png";
 
 function Home() {
   return (
@@ -264,6 +266,41 @@ function Home() {
       <Divider sx={{ pt: 6 }} />
       <Container maxWidth="lg">
         <Card sx={{ display: "flex", mt: 6 }}>
+          <Box sx={{ display: "flex", flexDirection: "column", m: 6 }}>
+            <Typography
+              component="h4"
+              fontWeight="bold"
+              variant="h4"
+              align="center"
+              gutterBottom
+            >
+              Gun Witch Wallpapers
+            </Typography>
+            <Typography variant="h6" align="center" paragraph gutterBottom>
+              Happy holidays! To celebrate the 3rd anniversary of Gun Witch and the founding of Kiyummi Games, here are Gun Witch wallpapers! Both desktop and phone versions are included.
+
+            </Typography>
+            <Grid container spacing={2} alignItems="center">
+              <Grid item sm={12} md={8}>
+                <CardMedia
+                  component="img"
+                  sx={{ width: "100%" }}
+                  image={desktop_wallpaper}
+                  alt="Gun Witch desktop wallpaper"
+                />
+              </Grid>
+              <Grid item sm={12} md={4}>
+                <CardMedia
+                  component="img"
+                  sx={{ width: "100%" }}
+                  image={phone_wallpaper}
+                  alt="Gun Witch phone wallpaper"
+                />
+              </Grid>
+            </Grid>
+          </Box>
+        </Card>
+        <Card sx={{ display: "flex", mt: 6 }}>
           <Grid container spacing={2}>
             <Grid item sm={12} md={4}>
               <Box sx={{ p: 4 }}>
@@ -272,7 +309,7 @@ function Home() {
                     component="img"
                     sx={{ width: "100%" }}
                     image={artbook_cover}
-                    alt="Artbook cover"
+                    alt="Fairyside artbook cover"
                   />
                 </a>
               </Box>
